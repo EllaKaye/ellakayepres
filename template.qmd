@@ -1,0 +1,195 @@
+---
+title: Ella Kaye Presentation
+subtitle: Subtitle
+author: Ella Kaye
+date: last-modified
+date-format: long
+footer: <https://ellakaye.co.uk>
+format:
+  ellakayepres-revealjs: default
+---
+
+## Introduction
+
+This is a Quarto presentation format consistent with the style of [Ella Kaye's personal website](https://ellakaye.co.uk), particularly the colours.
+
+
+:::{.notes}
+Speaker notes go here.
+:::
+
+## Colours
+
+Colour classes for text and highlights:
+
+:::: {.columns}
+::: {.column}
+[pink]{.pink}
+
+[blue]{.blue}
+
+[purple]{.purple}
+
+[orange]{.orange}
+
+[lime]{.lime}
+
+[green]{.green}
+:::
+
+
+::: {.column}
+[pink-hl]{.pink-hl}
+
+[blue-hl]{.blue-hl}
+
+[purple-hl]{.purple-hl}
+
+[orange-hl]{.orange-hl}
+
+[lime-hl]{.lime-hl}
+
+[green-hl]{.green-hl}
+:::
+::::
+
+
+# Colour backgrounds for new sections {.pink-bg footer=false}
+
+## {.lime-bg .center-h .center .larger200 footer=false}
+
+Or stressing **key points**
+
+## Typography
+
+I use [Figtree](https://fonts.google.com/specimen/Figtree) for body text, [Outfit](https://fonts.google.com/specimen/Outfit) for headings, and [Fira Mono](https://fonts.google.com/specimen/Fira+Mono) for code.
+
+<details>
+<summary>Difference from my website fonts</summary>
+On my website, I use LemonMilkPro for body and headings and MonoLisa for code.
+Those are paid-for, licensed fonts. 
+For presentations, I prefer to use free fonts, which can be used in presentations published on GitHub pages, without needing font files.
+</details>
+
+## Custom syntax highlighting {.smaller90}
+
+```{r}
+#| echo: true
+#| eval: false
+penguins |>
+  mutate(
+    long_flipper = case_when(
+      species == "Adelie" & flipper_len > 195 ~ TRUE,
+      species == "Chinstrap" & flipper_len > 200 ~ TRUE,
+      species == "Gentoo" & flipper_len > 225 ~ TRUE,
+      TRUE ~ FALSE
+    )
+  ) |>
+  mutate(
+    body_mass_kg = body_mass / 1000,
+    bill_len_cm = bill_len / 10,
+    bill_dep_cm = bill_dep / 10
+  )
+```
+
+
+## Custom callouts {.smaller80}
+
+:::{.callout-note}
+A note
+:::
+
+:::{.callout-warning}
+A warning
+:::
+
+:::{.callout-important}
+Something important
+:::
+
+:::{.callout-tip}
+This is a good idea
+:::
+
+:::{.callout-caution}
+Be careful about doing this
+:::
+
+## Columns with backgrounds
+
+Use class `.col-box-{color}` to apply colour box styling
+
+::: {columns}
+::: {.column .col-box-pink width="32%"}
+Box 1: pink
+
+Default height is 450px
+:::
+
+::: {.column .col-box-blue width="32%"}
+Box 2: blue
+
+:::
+
+::: {.column .col-box-purple width="32%"}
+Box 3: purple
+:::
+:::
+
+## Columns with backgrounds: tall and short
+
+::::: {columns}
+:::: {.column .col-box-orange-tall width="49%"}
+Colour box styling can be applied to entire columns
+
+This has height 600px
+::::
+
+:::: {.column width="49%"}
+:::{.col-box-lime-short}
+Or to divs within columns to create stacks
+:::
+
+:::{.col-box-green-short}
+This div has height 300px
+:::
+
+::::
+
+:::::
+
+# Some other nice-to-haves {.blue-bg}
+
+## Alignment
+
+There are classes to help with text alignment:
+
+:::{.center-h}
+`{.center-h}` gives horizontally-centered text
+:::
+
+:::{.right}
+`{.right}` gives right-aligned text
+:::
+
+:::{.callout-note}
+For all revealjs Quarto presentations, applying `{.center}` to the slide title vertically centers the whole slide.
+:::
+
+## Sizing
+
+There are classes to help size text by a given percentage:
+
+[`{.smaller90}`]{.smaller90}, [`{.smaller80}`]{.smaller80}, [`{.smaller75}`]{.smaller75}
+[`{.smaller70}`]{.smaller70}, [`{.smaller60}`]{.smaller60}, [`{.smaller50}`]{.smaller50}
+
+[`{.larger125}`]{.larger125}, [`{.larger150}`]{.larger150}, [`{.larger175}`]{.larger175}, 
+[`{.larger200}`]{.larger200}, [`{.larger250}`]{.larger250}
+
+## More information
+
+You can learn more about Quarto Revealjs presentations at <https://quarto.org/docs/presentations/revealjs/>
+
+You can learn more about Quarto extensions at <https://quarto.org/docs/extensions/>
+
+You can find these slides at <https://ellakaye.github.io/ellakayepres/>
