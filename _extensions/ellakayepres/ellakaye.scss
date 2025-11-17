@@ -284,30 +284,31 @@ kbd {
 }
 
 // inverse
-/*
+
 .inverse {
   color: $white;
 
   h1, h2, h3 {
-    color: $teal_bright;
+    color: $green;
     
     code {
-      color: $gold_bright;
+      color: $orange;
     }
   }
   
   .slide-background-content {
-    background-color: $aubergine;
+    background-color: $dark;
   }
   
   a {
-    color: $blue_bright;
+    color: $lime;
   }
   
   p code {
-    color: $gold_bright;
+    color: $orange;
   }
   
+  /*
   // Inverse callout backgrounds
   div.callout-note.callout-style-default .callout-title {
     background-color: $blue_dark !important;
@@ -333,10 +334,10 @@ kbd {
   .callout-icon::before {
     filter: brightness(0) invert(1);
   }
+  */
 }
 
 // CRITICAL: This overrides callout title colors in inverse slides
 .inverse .callout-title p { 
   color: $white !important; 
 }
-*/
