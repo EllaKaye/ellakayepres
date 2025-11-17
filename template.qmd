@@ -55,11 +55,11 @@ Colour classes for text and highlights:
 
 # Inverse class for new sections {.inverse footer=false}
 
-# Or colour backgrounds {.pink-bg footer=false}
+# Or use colour backgrounds {.pink-bg footer=false}
 
 ## {.lime-bg .center-h .center .larger200 footer=false}
 
-Or for stressing **key points**
+Or colour backgrounds for stressing **key points**
 
 ## Typography
 
