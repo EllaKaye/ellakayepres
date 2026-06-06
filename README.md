@@ -25,7 +25,7 @@ quarto use template EllaKaye/ellakayepres
 
 3. When prompted, type 'Y' to trust the authors of the template
 4. When prompted, type 'N' to **not** create a subdirectory
-5. When prompted, type 'Y' to install the warwickpres extension
+5. When prompted, type 'Y' to install the ellakayepres extension
 
 ## Example
 
