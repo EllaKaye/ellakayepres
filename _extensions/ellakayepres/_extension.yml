@@ -1,6 +1,6 @@
 title: Ella Kaye Presentation
 author: Ella Kaye
-version: 1.0.0
+version: 1.1.0
 quarto-required: ">=1.6.0"
 contributes:
   formats:
@@ -16,7 +16,7 @@ contributes:
         code-overflow: wrap
     revealjs:
       theme: ellakaye.scss
-      highlight-style: ellakaye-light.theme
+      syntax-highlighting: ellakaye-dark.theme
       slide-number: true
       callout-icon: true
       preview-links: auto
